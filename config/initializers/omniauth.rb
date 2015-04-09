@@ -12,3 +12,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
                        env['omniauth.strategy'].options[:client_options][:site] = site_url
                      }
 end
+
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :shopify, 'dd5001b1ad736777d67e702d00338e20', 'ed892fe29b687959d10afcb739366128'
+end
