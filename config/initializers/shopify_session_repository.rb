@@ -1,7 +1,7 @@
 # You should replace InMemorySessionStore with what you will be using
 # in Production. For example a model called "Shop":
 #
-ShopifySessionRepository.storage = 'Shop'
+# ShopifySessionRepository.storage = 'Shop'
 #
 # Interface to implement are self.retrieve(id) and self.store(ShopifyAPI::Session)
 # Here is how you would add these functions to an ActiveRecord:
