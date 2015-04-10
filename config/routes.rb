@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'login' => :new
     post 'login' => :create
     get 'auth/shopify/callback' => :show
+    # match '/auth/shopify/callback', :to => 'login#create', via: [:get, :post]
     delete 'logout' => :destroy
   end
   root :to => 'home#index'

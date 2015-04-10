@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'shopify_app'
-gem 'shopify_api'
+# gem 'shopify_api'
 gem 'pg'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
