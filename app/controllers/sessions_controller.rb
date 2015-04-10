@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  before_filter :expire_hsts
   def new
     authenticate if params[:shop].present?
   end
