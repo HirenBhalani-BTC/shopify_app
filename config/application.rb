@@ -11,7 +11,7 @@ module ShopifyApp
 
     # Shopify API connection credentials:
     config.shopify.api_key = 'dd5001b1ad736777d67e702d00338e20'
-    config.shopify.secret = 'ed892fe29b687959d10afcb739366128'
+    config.shopify.secret = '146b904820253ada5126a391a569e7c9'
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
