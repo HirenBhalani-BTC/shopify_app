@@ -20,4 +20,4 @@ class Shop < ActiveRecord::Base
   end
 end
 
-ShopifySessionRepository.storage = InMemorySessionStore
+ShopifySessionRepository.storage = Shop
