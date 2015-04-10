@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  before_filter :expire_hsts
+
+  private
+  def expire_hsts
+    response.headers["Strict-Transport-Security"] = 'max-age=0'
+  end
   # It will re-login if a user tries to access the application from a different shop
   # before_filter :login_again_if_different_shop
   
