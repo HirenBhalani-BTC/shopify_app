@@ -4,8 +4,7 @@ class HomeController < ApplicationController
   
   def welcome
     current_host = "#{request.host}#{':' + request.port.to_s if request.port != 80}"
-    puts '-------------------------------------------------------'
-    # @callback_url = "http://#{current_host}/login"
+    @callback_url = "http://#{current_host}/login"
   end
   
   def index
