@@ -5,9 +5,9 @@ class SessionsController < ApplicationController
 
   def create
     auth_hash = request.env['omniauth.auth']
- 
+    authenticate
   render :text => auth_hash.inspect
-    # authenticate
+    
   end
   
   def show
